@@ -1,12 +1,16 @@
+
 alert("Bienvenido a su simulador de prestamos Eunoia");
 let nombre = prompt("Ingresa su nombre");
-if (nombre != "") 
-  for (let i = 10; i > 0; i--) {
-    let numero = 11 - i;
-    let quedan = i - 1;
-    alert(nombre + " Tiene el numero " + numero);
-    alert("Quedan " + quedan + " numeros");
-  }
+if (nombre != "") {
+let turno = [];
+for(let i=1;i<=10;i++){
+    turno.push(i);
+    const turnoturno = turno.shift(i);
+console.log(turnoturno);
+ alert("Usted tiene el turno " + turnoturno)
+ alert("Quedan " + (10 - turnoturno) + " turnos")
+}
+}
 function calculoIntereses(dinero, cantidadCuotas, intereses) {
   cuotaInteres = (dinero / cantidadCuotas) * intereses;
 }
